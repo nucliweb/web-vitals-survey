@@ -21,7 +21,7 @@ export const VoteForm = (props: VoteFormProps) => {
       <RadioGroup
         name="cwv"
         className="flex justify-between w-full space-x-4"
-        onChange={(e) => setSelected(e.target.value)}
+        onChange={(e) => setSelected((e.target as HTMLInputElement).value)}
       >
         {["lcp", "inp", "cls"].map((item) => (
           <div
